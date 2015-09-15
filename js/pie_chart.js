@@ -58,9 +58,11 @@ $(document).ready(function(){
 	}
 	
 	for(var i=0;i<dataset.length;i++){
-		dataset[i] = 100*(dataset[i]/total).toFixed(3);
+		//dataset[i] = 100*(dataset[i]/total).toFixed(2);
+		dataset[i] = Math.round((dataset[i]/total)*100)/100
 	}
 	
+
 	var pie = new d3pie("summary-pie", {
 		"header": {
 			"title": {
@@ -92,7 +94,7 @@ $(document).ready(function(){
 			"content": [
 				{
 					"label": "不伤人",
-					"value": dataset[17]+"%",
+					"value": dataset[17],
 					"color": "#7e3838"
 				},
 				{
