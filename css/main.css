@@ -179,7 +179,7 @@ body{
 
 /*div*/
 .wrapper-page{
-  width:960px;
+  //width:960px;
   float:none;
   margin: 0 auto;
 }
@@ -1432,20 +1432,4 @@ FB Like Button
 body {
   text-align: center;
   background: #efefef;
-}
-
-#chart {
-  text-align: left;
-  box-shadow: 0px 2px 8px rgba(0,0,0,.2);
-  border: 1px solid #aaa;
-  margin: 32px auto;
-  background: white;
-}
-
-#tooltip {
-	border:1px solid #333; 
-	background:#f7f5d1; 
-	padding:1px; 
-	color:#333; 
-	display:none; 
 }
