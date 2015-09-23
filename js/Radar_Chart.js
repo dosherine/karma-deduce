@@ -241,16 +241,14 @@ var RadarChart = {
 						.style("fill-opacity", cfg.opacityArea);
 				  })
 	     */
+		//.append("svg:title")
+		//.text(function(j){return Math.max(j.value, 0)});
 		.append("svg:title")
-		//.text(function(j){return Math.max(j.value, 0)})
-		.text(function(d){return d.source})
-		;
-
+		.text(function(d){return d.source});
 	  series++;
 	});
 	
 	//Tooltip
-	
 	tooltip = g.append('text')
 			   .style('opacity', 1)
 			   .style('font-family', '楷体')
@@ -259,8 +257,6 @@ var RadarChart = {
 			   .style('fill','#000')
 			   .attr("text-anchor", "middle")
 			   ;
-	/*
-    tooltip = g.append("svg:title");
-	*/	   
+		   
   }
 };

@@ -47,7 +47,7 @@ $(document).ready(function(){
 			
 			//Call function to draw the Radar chart
 			//Will expect that data is in %'s
-			RadarChart.draw("#chart", d, mycfg);
+			RadarChart.draw("#summary-radar", d, mycfg);
 			
 			////////////////////////////////////////////
 			/////////// Initiate legend ////////////////
@@ -93,7 +93,7 @@ $(document).ready(function(){
 				  .append("text")
 				  .attr("x", w + 6 )
 				  .attr("y", function(d, i){ return i * 20 + 14;})
-				  .attr("font-size", "16px")
+				  .attr("font-size", "19px")
 				  .attr("fill", "#737373")
 				  .text(function(d) { return d; })
 				  ;	

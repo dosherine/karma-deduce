@@ -14,11 +14,11 @@
   <link rel="stylesheet" href="css/rickshaw.css">
   <link rel="stylesheet" href="css/rickshaw.min.css">
   <link rel="stylesheet" href="css/vis.css">
-  <link rel="stylesheet" href="css/jquery-ui.css">
+
   <link rel="stylesheet" href="css/bootstrap-toggle.css">
 
   <script src="js/libs/jquery-1.9.1.min.js"></script>
-  <script src="js/libs/jquery-ui.js"></script>
+
   <script src="js/libs/bootstrap.js"></script>
   <script src="js/libs/modernizr-2.6.2.min.js"></script>
 
@@ -38,7 +38,7 @@
 			  font-size: 14px;
 			  font-family: "Helvetica Neue", Helvetica;
 			}
-
+	 	
   </style>
 </head>
 
@@ -299,8 +299,13 @@
 <br>&nbsp;
 <button id="sub_button" type="button" class="btn btn-primary">submit</button>
 </div>
-        <div id="summary-pie" class="d_ul">  </div>
-        <div id="summary-radar" class="d_ul"><div id="chart"  class="d_ul"></div></div>
+
+
+<div class="row"><!--纵向表示-->
+        <div id="summary-pie" class="col-md-6">  </div>
+        
+        <div id="summary-radar" class="col-md-6"></div>
+</div>
 		
 </section>
 
@@ -317,8 +322,7 @@
 <script src="js/radar_data.js"></script>
  <script src="js/Radar_Chart.js"></script>
  <script src="js/pie_chart.js"></script>
-
-
+  
 
 </body>
 </html>
