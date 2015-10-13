@@ -199,7 +199,7 @@ var RadarChart = {
 					g.selectAll(z)
 						.transition(200)
 						.style("fill-opacity", .7);
-						
+												
 				    
 			}
 			else{

@@ -4,7 +4,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Deed Viz | Discover Karma Rule, &amp; Make Good Karma!</title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width">
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
@@ -33,26 +33,21 @@
   <!-- 让两个chart 横放-->
   <style>
 	  #summary-radar {
+			  overflow: hidden;
 			  margin: 0;
 			  font-size: 14px;
 			  font-family: "Helvetica Neue", Helvetica;
 			}
-	 
-	 .d_ul{
-		width:550px;
-	    float:left
-	}
+	 	
   </style>
 </head>
 
 <body>
- 
   <!-- h1>Test - in Static</h1 -->
   <!-- Add your site or application content here -->
 
   <!-- Title / about / Credits -->
   <header>
-
     <div class="wrapper-page">
       <!-- beer viz logo here -->
       <p>DEEDVIZ | Discover Karma Rule, &amp; Make Good Karma!</p>
@@ -89,8 +84,6 @@
 
 
     <!-- div id="editbox">This is editbox</div -->
-    
-   
    <section class="active" id="summary">
    <div id="summary-table">
     <table id="summary-charts"  class="table table-hover"  >  
@@ -307,26 +300,106 @@
 <button id="sub_button" type="button" class="btn btn-primary">submit</button>
 </div>
 
-    <div class="row"><!--纵向表示-->
-            <div id="summary-pie" class="col-xs-12 col-sm-12 col-md-6">  </div>
-            
-            <div id="summary-radar" class="col-xs-12 col-sm-12 col-md-6"></div>
+
+<div id="summary-text" style="display:none"><!--结果解释-->
+	<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+    <h3>测评报告</h3>
+	<blockquote class="text-left" style="text-indent:2em">
+        通过你对自己人生经历的判断，我们对你的人生现状的评价由如下2个图显示。第一个图显示了你造成这种现状的原因，以及这些原因各自所占的比例；第二个图显示了你在八种”人生状态“上的总体分布状况。
+    </blockquote>
+   </div>
+   
+<div class="row col-md-offset-1"><!--纵向表示-->
+        <div id="summary-pie" class="col-md-6 col-xs-6">  </div>
+        
+        <div id="summary-radar" class="col-md-6 col-xs-6"></div>
+</div>
+
+
+	<div class="row col-md-10 col-md-offset-1">
+    <table class="table table-hover">
+    <caption><h3>八种“果”的含义</h3></caption>
+    	<thead>
+        <tr>
+            <th class="text-center"> 人生状态</th>
+            <th class="text-center"> 释义</th>
+            <th class="text-center"> 影响因子 </th>
+        </tr> 
+    	</thead>
+        
+    	<tbody>
+        <tr>
+            <th scope="row">长寿</th>
+            <td>可使我们长期修习利益自他的善根 </td>
+            <td>不杀生、施食、施药 </td>
+        </tr>
+        <tr>
+            <th scope="row">形体端严</th>
+            <td> 可使他人一见便深受摄伏</td>
+            <td> 修忍辱、供养所依、供养神佛、施物</td>
+        </tr>
+        <tr>
+            <th scope="row">种族高贵</th>
+            <td> 可使他人接受自己的教导</td>
+            <td>戒心生傲慢、保持谦虚、敬老 </td>
+        </tr>
+        <tr>
+            <th scope="row">受用丰富</th>
+            <td>先用财物吸引有情，再以正法成熟有情，做广大的利他事业 </td>
+            <td>供养所依、施食、施物、上供下施 </td>
+        </tr>
+        <tr>
+            <th scope="row">言辞威肃</th>
+            <td> 可使他人产生信任感</td>
+            <td> 慎言</td>
+        </tr>
+        <tr>
+            <th scope="row">声誉卓著</th>
+            <td> 可以保证我们所有的教导迅速、确实的贯彻，如同国王的旨谕一般</td>
+            <td> 敬老、发愿</td>
+        </tr>
+        <tr>
+            <th scope="row">男性</th>
+            <td>可以使我们不怕处身在大众之中，也能独自住在僻静处修法等，不易遭受障碍和影响 </td>
+            <td>喜欢男身、不喜女事、慎言 </td>
+        </tr>
+        <tr>
+            <th scope="row">身心健壮</th>
+            <td>身健壮功德：可以使我们以苦行来修习难修之法；心健壮功德：可以让我们队利益自他之事不生厌烦，并因勇猛坚固而获得分别观察慧力，由此迅速发起神通 </td>
+            <td>乐于助人、不伤人 </td>
+        </tr>
+    	</tbody>
+ 	</table>
+    </div><!-- end of table's p -->
+    
+    
+    </br>
+    <div class="col-md-8 col-md-offset-2">
+        <blockquote class="text-left" style="text-indent:2em">
+        $$所以你的测评结果是：
+        <div id="result"> </div>
+        </blockquote>
     </div>
-
-
+ 	</div><!-- end of row-->
+</div> <!-- end of text-->
+		
 </section>
-
-
 
   <!-- aout the author -->
   <footer>
-    <h4>©CADAL</h4>
+    <h4>Handcrafted with <span class="icon-entypo">&hearts;</span> by:</h4>
+    <ul id="list-authors">
+      <li>
+        Bialy , Sherine
+      </li>
+    </ul>
   </footer>
-  
 <script src="js/main.js"></script>
+ <script src="js/pie_chart.js"></script>
 <script src="js/radar_data.js"></script>
  <script src="js/Radar_Chart.js"></script>
- <script src="js/pie_chart.js"></script>
+<script src="js/text.js"></script>
   
 
 </body>

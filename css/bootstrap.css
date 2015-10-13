@@ -2068,7 +2068,9 @@ th {
   max-width: 100%;
   margin-bottom: 20px;
 }
-.table > thead > tr > th,
+.table > thead > tr > th{
+	vertical-align:central
+}
 .table > tbody > tr > th,
 .table > tfoot > tr > th,
 .table > thead > tr > td,
