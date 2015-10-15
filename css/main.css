@@ -179,7 +179,7 @@ body{
 
 /*div*/
 .wrapper-page{
-  width:960px;
+ /*width:960px;*/
   float:none;
   margin: 0 auto;
 }
