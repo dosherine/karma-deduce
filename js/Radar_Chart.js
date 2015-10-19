@@ -165,7 +165,7 @@ var RadarChart = {
 		
 		//sherine's code 2015-10-19
 		.attr('stroke', "transparent")
-		.attr('stroke-width', 15)
+		.attr('stroke-width', 30)
 		
 		
 		.attr("cx", function(j, i){
