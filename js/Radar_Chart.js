@@ -162,6 +162,12 @@ var RadarChart = {
 		.attr("class", "radar-chart-serie"+series)
 		.attr('r', cfg.radius)
 		.attr("alt", function(j){return Math.max(j.value, 0)})
+		
+		//sherine's code 2015-10-19
+		.attr('stroke', "transparent")
+		.attr('stroke-width', 15)
+		
+		
 		.attr("cx", function(j, i){
 		  dataValues.push([
 			cfg.w/2*(1-(parseFloat(Math.max(j.value, 0))/cfg.maxValue)*cfg.factor*Math.sin(i*cfg.radians/total)), 

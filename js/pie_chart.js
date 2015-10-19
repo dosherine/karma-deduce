@@ -66,7 +66,7 @@ $(document).ready(function(){
 	var pie = new d3pie("summary-pie", {
 		"header": {
 			"title": {
-				"text": "因",
+				"text": " 因",
 				"fontSize": 20,
 				"font": "open sans"
 			},
